@@ -1,0 +1,4 @@
+touch /etc/persistent/ct 
+save
+
+

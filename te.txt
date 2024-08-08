@@ -1,0 +1,4 @@
+echo "echo'option Value=\511\">Compliance Test</option>'>>/etc/ccodes.inc">/etc/persistent/rc.poststart
+chmod +x /etc/persistent/rc.poststart
+save 
+reboot
