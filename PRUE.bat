@@ -28,11 +28,11 @@ ECHO SE CARGARA EL BACKUP...
 call :pruebaping
 
 if %aux%==1 ( echo CARGANDO BACKUP...
-pscp -scp -p 23 -pw 628819872 C:\Nueva\back.cfg ubnt@192.168.1.20:/tmp/system.cfg
+pscp -scp -p 23 -pw your_password C:\Nueva\back.cfg ubnt@192.168.1.20:/tmp/system.cfg
 
-start putty -ssh 192.168.1.20 23 -l ubnt -pw 628819872 -m C:\Nueva\Compliance.txt
+start putty -ssh 192.168.1.20 23 -l ubnt -pw your_password -m C:\Nueva\Compliance.txt
 timeout /t 15 /nobreak
-start putty -ssh 192.168.1.20 23 -l ubnt -pw 628819872 -m C:\Nueva\Command.txt
+start putty -ssh 192.168.1.20 23 -l ubnt -pw your_password -m C:\Nueva\Command.txt
 call :pruebaping
 if %aux%==1 (echo BACKUP CARGADO...
 EHO PRESIONE ENTER PARA VOLVER AL MENU PRINCIPAL
