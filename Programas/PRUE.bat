@@ -28,16 +28,16 @@ ECHO SE CARGARA EL BACKUP...
 call :pruebaping
 
 if %aux%==1 ( echo CARGANDO BACKUP...
-pscp -scp -P 23 -pw 628819872 C:\Nueva\back.cfg ubnt@192.168.1.20:/tmp/system.cfg
+pscp -scp -P 23 -pw your_password C:\Nueva\back.cfg ubnt@192.168.1.20:/tmp/system.cfg
 if %ERRORLEVEL% NEQ 0 ( echo.
 call C:\Nueva\PRUE.bat
 exit /b)
 timeout /t 10 /nobreak
 cls
 
-start putty -ssh 192.168.1.20 23 -l ubnt -pw 628819872 -m C:\Nueva\Compliance.txt
+start putty -ssh 192.168.1.20 23 -l ubnt -pw your_password -m C:\Nueva\Compliance.txt
 timeout /t 15 /nobreak
-start putty -ssh 192.168.1.20 23 -l ubnt -pw 628819872 -m C:\Nueva\Command.txt
+start putty -ssh 192.168.1.20 23 -l ubnt -pw your_password -m C:\Nueva\Command.txt
 timeout /t 10 /nobreak
 call :pruebaping
 if %aux%==1 (echo BACKUP CARGADO...
