@@ -26,11 +26,11 @@ if %aux%==1 ( echo SE HARA EL COMPLIANCE
 
 timeout /t 20 /nobreak
 
-start putty -ssh 192.168.1.20 23 -l ubnt -pw 628819872 -m C:\Nueva\Compliance.txt
+start putty -ssh 192.168.1.20 23 -l ubnt -pw your_password -m C:\Nueva\Compliance.txt
 
 timeout /t 10 /nobreak
 
-start putty -ssh 192.168.1.20 23 -l ubnt -pw 628819872 -m C:\Nueva\Command.txt
+start putty -ssh 192.168.1.20 23 -l ubnt -pw your_password -m C:\Nueva\Command.txt
 
 timeout /t 15 /nobreak
 cls
