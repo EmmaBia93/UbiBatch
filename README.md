@@ -17,7 +17,7 @@ Entre los usos contemplados por el proyecto se encuentran:
 
 ## Tecnologías
 
-- Python
+- BATCH
 - Automatización mediante scripts
 - Comunicación remota con dispositivos Ubiquiti
 
